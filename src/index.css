@@ -70,79 +70,73 @@ nav ul li {
   font-size: 1rem;
 }
 
-/* Responsive navigation */
-@media (max-width: 600px) {
-  nav {
-    gap: 0.5rem;
+/* Navigation styling */
+
+/* Desktop: show nav inline, hide menu toggle */
+@media (min-width: 601px) {
+  .menu-toggle {
+    display: none;
   }
-  nav .primary-nav {
+  .nav-list {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
   }
-  nav .primary-nav li {
+  .nav-list li {
     font-weight: 600;
     font-size: 1rem;
   }
-  nav .primary-nav a {
-    padding: 0.25rem 0.5rem;
-    display: block;
+  .nav-list a {
+    color: #00bcd4;
+    text-decoration: none;
   }
+  .nav-list a:hover,
+  .nav-list a.active {
+    color: #00e5ff;
+  }
+}
 
-  nav .menu-toggle {
+/* Mobile: hide nav list by default, show on menu toggle */
+@media (max-width: 600px) {
+  .menu-toggle {
     display: block;
     cursor: pointer;
     font-size: 1.8rem;
     color: #00e5ff;
   }
-
-  nav ul.secondary-nav {
-    flex-direction: column;
-    background: #16213e;
+  .nav-list {
     position: fixed;
-    top: 64px;
+    top: 64px; /* header height */
     right: 0;
     height: calc(100% - 64px);
     width: 220px;
+    background: #16213e;
     padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: -4px 0 10px rgba(0,229,255,0.25);
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    box-shadow: -4px 0 10px rgba(0,229,255,0.25);
+    list-style: none;
     z-index: 1001;
   }
-
-  nav ul.secondary-nav.open {
+  .nav-list.open {
     transform: translateX(0);
   }
-
-  nav ul.secondary-nav li {
+  .nav-list li {
     font-weight: 600;
     font-size: 1rem;
   }
-  nav ul.secondary-nav a {
+  .nav-list a {
+    color: #00bcd4;
+    text-decoration: none;
     display: block;
-    margin-bottom: 1rem;
+  }
+  .nav-list a:hover,
+  .nav-list a.active {
+    color: #00e5ff;
   }
 }
 
-@media(min-width: 601px) {
-  nav ul.secondary-nav {
-    display: flex;
-    gap: 2rem;
-    background: none;
-    position: static;
-    transform: none !important;
-    box-shadow: none;
-    height: auto;
-    width: auto;
-    padding: 0;
-  }
-  nav ul.secondary-nav li {
-    margin-bottom: 0;
-  }
-  nav .menu-toggle {
-    display: none;
-  }
-}
 
 /* Hero section */
 section#hero {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -16,21 +17,8 @@ const Header: React.FC = () => {
       <div className="container">
         <h1>Efficiency Edge Africa</h1>
         <nav aria-label="Primary navigation">
-          <ul className="primary-nav">
-            <li>
-              <a href="#hero" onClick={closeNav}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#services" onClick={closeNav}>
-                Services
-              </a>
-            </li>
-          </ul>
           <div
             className="menu-toggle"
-            id="menu-toggle"
             onClick={toggleNav}
             aria-label="Toggle menu"
             aria-expanded={navOpen}
@@ -45,7 +33,17 @@ const Header: React.FC = () => {
           >
             &#9776;
           </div>
-          <ul className={`secondary-nav${navOpen ? ' open' : ''}`} id="secondary-nav">
+          <ul className={`nav-list${navOpen ? ' open' : ''}`}>
+            <li>
+              <a href="#hero" onClick={closeNav}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#services" onClick={closeNav}>
+                Services
+              </a>
+            </li>
             <li>
               <a href="#about" onClick={closeNav}>
                 About Us
