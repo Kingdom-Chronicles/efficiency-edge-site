@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const messages = [
-  'We Drive Businesses To The Forefront Of The Industries Through Comprehensive AI Automation.',
-  'Ready to change your business?',
+  'We Drive Businesses',
+  'To The Forefront Of The Industries',
+  'Through Comprehensive AI Automation',
+  'Ready to change your Business?',
 ];
 
 const typingSpeed = 50; // ms per character
