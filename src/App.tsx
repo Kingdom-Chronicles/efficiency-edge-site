@@ -5,6 +5,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Signup from './components/Signup';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Services />
         <About />
         <Signup />
+        <Contact />
       </main>
       <Footer />
     </>

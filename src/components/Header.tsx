@@ -56,6 +56,11 @@ const Header: React.FC = () => {
                 Classes
               </a>
             </li>
+                <li>
+              <a href="#contact" onClick={closeNav}>
+                Contact Us
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
