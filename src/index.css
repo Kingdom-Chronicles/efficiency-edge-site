@@ -141,7 +141,7 @@ nav ul li {
 /* Hero section */
 section#hero {
   height: 80vh;
-  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+  /* background: url('') center/cover no-repeat;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +150,11 @@ section#hero {
   margin-top: 72px; /* header height */
   color: #00e5ff;
   text-shadow: 0 0 10px rgba(0,229,255,0.8);
+  position: relative;
 }
+
+
+
 
 section#hero h2 {
   font-size: 3rem;
@@ -328,4 +332,27 @@ footer {
   margin-top: 4rem;
   user-select: none;
 }
+.logo-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.logo {
+  height: 80px; /* Adjust height as needed */
+  margin-right: 80px; /* Space between logo and title */
+}
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s step-start infinite;
+  color: #00e5ff;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
 

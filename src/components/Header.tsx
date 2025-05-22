@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import logo from '../assets/edgelogo.png';
 
 const Header: React.FC = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -15,7 +15,9 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className="container">
-        <h1>Efficiency Edge Africa</h1>
+     <div className="logo-container">
+          <img src={logo} alt="Efficiency Edge Logo" className="logo" />
+        </div>
         <nav aria-label="Primary navigation">
           <div
             className="menu-toggle"
