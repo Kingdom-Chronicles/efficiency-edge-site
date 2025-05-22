@@ -8,7 +8,7 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'TimothY Masiko',
+    name: 'Timothy Masiko',
     role: 'Chief AI Strategist',
     photo: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
