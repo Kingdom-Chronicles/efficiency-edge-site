@@ -1,4 +1,6 @@
 import React from 'react';
+import masiko from '../assets/masiko.jpg';
+import mbahe from '../assets/mbahe.jpg';
 
 interface TeamMember {
   name: string;
@@ -10,12 +12,12 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Timothy Masiko',
     role: 'Chief AI Strategist',
-    photo: 'https://randomuser.me/api/portraits/women/44.jpg',
+    photo: masiko,
   },
   {
     name: 'Anthony Isingoma',
     role: 'Lead Software Engineer',
-    photo: 'https://randomuser.me/api/portraits/men/46.jpg',
+    photo: mbahe,
   },
 ];
 
